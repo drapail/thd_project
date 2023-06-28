@@ -22,5 +22,6 @@ body {
 }
 
 #chatbot {
+    height: 100%;
     position: relative;
 }
