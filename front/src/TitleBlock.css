@@ -1,0 +1,9 @@
+.title-block {
+    background-color: #343a40;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    max-height: 100px; /* !important; */
+    padding: 0.5rem;
+    margin: 0;
+}
