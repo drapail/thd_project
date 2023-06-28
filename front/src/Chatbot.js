@@ -4,6 +4,7 @@ import './Chatbot.css';
 import {Header} from "./Header";
 import {UserInput} from "./UserInput";
 import {MessageArea} from "./MessageArea";
+import {TitleBlock} from "./TitleBlock";
 
 import {io} from "socket.io-client";
 const socket = io();
@@ -46,6 +47,7 @@ function Chatbot() {
     */
     return (
         <div className="chat_window">
+            <TitleBlock />
             <Header />
             <MessageArea messages={messages} />
             <UserInput onSubmitMessage={onSubmitMessage} />
