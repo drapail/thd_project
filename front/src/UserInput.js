@@ -21,7 +21,7 @@ function UserInput(props) {
         <div className="bottom_wrapper clearfix">
             <div className="message_input_wrapper">
                 <input className="message_input" value={inputText} onChange={handleChange}
-                       placeholder="Type in something here..."/>
+                       placeholder="Write your message here..."/>
             </div>
             <div className="send_message" onClick={handleSubmit}>
                 <div className="icon"/>
