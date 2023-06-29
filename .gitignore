@@ -23,9 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 
 
-back/node_modules
 .idea
 front/build
 front/node_modules
-back/package-lock.json
 front/package-lock.json
+back/node_modules
+back/public
+back/package-lock.json
