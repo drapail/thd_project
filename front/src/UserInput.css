@@ -3,13 +3,13 @@
     width: 100%;
     background-color: white;
     padding: 20px 20px;
-    height: 10%;
+    height: 13%;
     bottom: 0;
 }
 .bottom_wrapper .message_input_wrapper {
     display: inline-block;
-    height: 100%;
-    border-radius: 25px;
+    height: 50px;
+    border-radius: 30px;
     border: 1px solid #a18d6a;
     width: calc(100% - 160px);
     position: relative;

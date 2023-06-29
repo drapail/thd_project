@@ -10,9 +10,7 @@ import {io} from "socket.io-client";
 const socket = io();
 
 function Chatbot() {
-    /*
-      Handle messages
-     */
+
     const [messages, setMessages] = useState([{
         text: "Hello there, I am the Dungeons & Dragons bot." +
             "You will be given a few quests from various creatures and characters. Your task is to react to them." +
@@ -25,13 +23,12 @@ function Chatbot() {
     }]);
 
     useEffect(() => {
-        //if last message is a non-empty question, ask the server
+
         let lastMessage = messages[messages.length - 1]
         if (lastMessage.text !== "" && lastMessage.position === "right") {
             socket.emit('question', lastMessage.text);
         }
 
-        //handle server responses
         socket.on("answer", (data) => {
             setMessages([...messages, {text: data, position: "left"}])
         });
@@ -42,9 +39,6 @@ function Chatbot() {
         setMessages([...messages, {text: inputText, position: "right"}])
     }
 
-    /*
-      Render HTML
-    */
     return (
         <div className="chat_window">
             <TitleBlock />
