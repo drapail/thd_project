@@ -13,8 +13,6 @@
 }
 
 body {
-    /*background-color: darkgrey;*/
-    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,5 +22,6 @@ body {
 }
 
 #chatbot {
+    height: 100%;
     position: relative;
 }

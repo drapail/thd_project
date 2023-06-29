@@ -1,0 +1,13 @@
+.title-block {
+    display: flex;              /* Enable flexbox */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #343a40;
+    font-weight: 700;
+    color: #fff;
+    /*padding: 2.5% 0;*/
+    height: 10%;
+    padding: 0.5rem;
+    margin: 0;
+}
