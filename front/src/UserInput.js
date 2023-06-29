@@ -17,10 +17,16 @@ function UserInput(props) {
         setInputText("");
     }
 
+    function handleKeyDown(e) {
+        if (e.key === "Enter") {
+            handleSubmit();
+        }
+    }
+
     return (
         <div className="bottom_wrapper clearfix">
             <div className="message_input_wrapper">
-                <input className="message_input" value={inputText} onChange={handleChange}
+                <input className="message_input" value={inputText} onChange={handleChange} onKeyDown={handleKeyDown}
                        placeholder="Write your message here..."/>
             </div>
             <div className="send_message" onClick={handleSubmit}>
