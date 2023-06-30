@@ -26,7 +26,5 @@ yarn-error.log*
 .idea
 front/build
 front/node_modules
-front/package-lock.json
 back/node_modules
 back/public
-back/package-lock.json
