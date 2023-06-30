@@ -4,13 +4,9 @@ import {Message} from "./Message";
 
 function MessageArea(props) {
 
-    /*
-      Autoscrolling
-     */
     const messagesEndRef = useRef(null)
 
     useEffect(() => {
-        //scroll to bottom when a message is sent or received
         if (props.messages.length > 1) {
             scrollToBottom();
         }

@@ -10,9 +10,7 @@ import {io} from "socket.io-client";
 const socket = io();
 
 function Chatbot() {
-    /*
-      Handle messages
-     */
+
     const [messages, setMessages] = useState([{
         text: "Hello there, I am the Dungeons & Dragons bot." +
             "You will be given a few quests from various creatures and characters. Your task is to react to them." +
@@ -42,11 +40,8 @@ function Chatbot() {
         setMessages([...messages, {text: inputText, position: "right"}])
     }
 
-    /*
-      Render HTML
-    */
     return (
-        <div className="chat_window">
+        <div className="chat">
             <TitleBlock />
             <Header />
             <MessageArea messages={messages} />

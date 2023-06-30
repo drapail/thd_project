@@ -3,9 +3,6 @@ import './UserInput.css'
 
 function UserInput(props) {
 
-    /*
-    Handle input text
-    */
     const [inputText, setInputText] = useState("")
 
     function handleChange(e) {
