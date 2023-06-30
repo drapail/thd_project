@@ -1,7 +1,4 @@
 .bottom_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
     width: 100%;
     background-color: #302428;
@@ -12,10 +9,11 @@
 }
 
 .bottom_wrapper .message_input_wrapper {
-    flex: 1;
+    display: inline-block;
     height: 100%;
     border-radius: 25px;
     border: 1px solid #a18d6a;
+    width: calc(100% - 160px);
     position: relative;
     padding: 0 20px;
 }
@@ -24,23 +22,23 @@
     border: none;
     height: 100%;
     box-sizing: border-box;
-    width: 100%;
+    width: calc(100% - 40px);
+    position: absolute;
     background-color: #302428;
     outline-width: 0;
     color: #ffffff;
 }
 
 .bottom_wrapper .send_message {
-    width: 70px;
+    width: 140px;
     height: 50px;
     border-radius: 50px;
     background-color: #2e284c;
-    border: 2px solid #343a40;
     color: white;
     cursor: pointer;
     transition: all 0.2s linear;
     text-align: center;
-    margin-left: 10px;
+    /*float: right;*/
 }
 
 .bottom_wrapper .send_message:hover {
@@ -53,11 +51,6 @@
 .bottom_wrapper .send_message .text {
     font-size: 16px;
     font-weight: 300;
+    display: inline-block;
     line-height: 48px;
-}
-
-@media screen and (max-width: 767px) {
-    .bottom_wrapper .message_input_wrapper .message_input {
-        font-size: 16px;
-    }
 }
